@@ -1,3 +1,8 @@
+/**
+ * https://github.com/tangkaichuan/gridea-search
+ */
+
+
 //获取url参数
 function getParam(url, param) {
     if (url.indexOf('?') > -1) {
@@ -33,12 +38,13 @@ function ajax(obj) {
 
 //模糊搜索
 function fuzzySearch(data, phrase) {
+    //配置见 https://github.com/krisk/fuse
     var options = {
         shouldSort: true,
         includeMatches: true,
         threshold: 0.5,
         location: 0,
-        distance: 1000,
+        distance: 10000,
         maxPatternLength: 32,
         minMatchCharLength: 1,
         keys: [
