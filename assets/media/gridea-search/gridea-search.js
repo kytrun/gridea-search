@@ -164,9 +164,9 @@ function keywordsHighlight(searchedContent) {
     for (var i = 0; i < searchedContent.matches.length; i++) {
         if (searchedContent.matches[i].key === 'content') {//如果匹配到文章内容，截取关键字
             var indices = searchedContent.matches[i].indices[0];
-            var beforeKeyword = searchedPostContent.substring(indices[0] - 10, indices[0]);//关键字前20字
+            var beforeKeyword = searchedPostContent.substring(indices[0] - 10, indices[0]);//关键字前10字
             var keyword = searchedPostContent.substring(indices[0], indices[1] + 1);//关键字
-            var afterKeyword = searchedPostContent.substring(indices[1] + 1, indices[1] + 70);//关键字后80字
+            var afterKeyword = searchedPostContent.substring(indices[1] + 1, indices[1] + 70);//关键字后70字
             preview = beforeKeyword + '<span class="searched-keyword">'
                 + keyword + '</span>' + afterKeyword;
         } else {//没有匹配到文章内容，则是标题
