@@ -93,6 +93,8 @@
 
 ## 其他：
 
+* 开源协议：MIT
+
 * [官方目录结构与页面变量说明](https://github.com/getgridea/site/blob/master/docs/theme-structure.md)
 
 * 第三方库：
@@ -100,5 +102,7 @@
   * 前端模糊搜索 - Fuse.js: <https://github.com/krisk/fuse>
 
   * 模板解析 - EJS: <https://github.com/mde/ejs>
-
-* 开源协议：MIT
+  
+* 相关文章：
+ 
+  * [给Gridea博客增加搜索功能](https://tangkaichuan.cn/search-for-gridea-blog/)
