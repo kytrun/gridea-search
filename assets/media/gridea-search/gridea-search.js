@@ -11,7 +11,7 @@ function getParam(url, param) {
         for (var i = paramList.length - 1; i >= 0; i--) {
             var temp = paramList[i].split('=');
             if (temp[0] === param) {
-                return tep[1];
+                return temp[1];
             }
         }
     }
