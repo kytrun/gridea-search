@@ -9,13 +9,13 @@ function getParam(url, param) {
         var urlSearch = url.split('?');
         var paramList = urlSearch[1].split('&');
         for (var i = paramList.length - 1; i >= 0; i--) {
-            var tep = paramList[i].split('=');
-            if (tep[0] == param) {
+            var temp = paramList[i].split('=');
+            if (temp[0] == param) {
                 return tep[1];
             }
         }
     }
-};
+}
 
 //原生js Ajax 异步GET请求
 function ajax(obj) {
