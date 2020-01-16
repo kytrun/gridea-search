@@ -10,7 +10,7 @@ function getParam(url, param) {
         var paramList = urlSearch[1].split('&');
         for (var i = paramList.length - 1; i >= 0; i--) {
             var temp = paramList[i].split('=');
-            if (temp[0] == param) {
+            if (temp[0] === param) {
                 return tep[1];
             }
         }
@@ -24,11 +24,11 @@ function ajax(obj) {
     xhr.send(null);
     xhr.onreadystatechange = function () {
         //异步请求：响应状态为4，数据加载完毕
-        if (xhr.readyState == 4)
+        if (xhr.readyState === 4)
             callback();
     }
     function callback() {
-        if (xhr.status == 200) {
+        if (xhr.status === 200) {
             obj.success(xhr.responseText);
         } else {
             obj.error(xhr.status);
