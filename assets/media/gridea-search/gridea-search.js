@@ -132,7 +132,7 @@ function searchByParam(resultHandler) {
     if (phrase === '' || typeof (phrase) === 'undefined') {
         showNoResult();
     } else {
-        searchBy(decodeURI(phrase), resultHandler);
+        searchBy(decodeURIComponent(phrase), resultHandler);
     }
 }
 
