@@ -33,7 +33,7 @@
 公共模板，在适当位置添加搜索框供其他页面引用：
 
 ```html
-  <form id="gridea-search-form" data-update="<%= site.utils.now % >" action="<%= themeConfig.domain %>/search/">
+  <form id="gridea-search-form" data-update="<%= site.utils.now %>" action="<%= themeConfig.domain %>/search/">
     <input name="q" />
   </form>
 ```
@@ -66,7 +66,7 @@
 ### 2. 搜索输入框
 
 ```html
-  <form id="gridea-search-form" data-update="<%= site.utils.now % >" action="<%= themeConfig.domain %>/search/">
+  <form id="gridea-search-form" data-update="<%= site.utils.now %>" action="<%= themeConfig.domain %>/search/">
     <input name="q" />
   </form>
 ```
