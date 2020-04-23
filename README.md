@@ -33,9 +33,9 @@
 公共模板，在适当位置添加搜索框供其他页面引用：
 
 ```html
-<form id="gridea-search-form" data-update="<%=site.utils.now%>" action="/search/">
-  <input name="q" />
-</form>
+  <form id="gridea-search-form" data-update="<%= site.utils.now % >" action="<%= themeConfig.domain %>/search/">
+    <input name="q" />
+  </form>
 ```
 
 现有部分不可修改，可以添加 class 或 style 等其他属性。
@@ -66,9 +66,9 @@
 ### 2. 搜索输入框
 
 ```html
-<form id="gridea-search-form" data-update="<%=site.utils.now%>" action="/search/">
-  <input name="q" />
-</form>
+  <form id="gridea-search-form" data-update="<%= site.utils.now % >" action="<%= themeConfig.domain %>/search/">
+    <input name="q" />
+  </form>
 ```
 
 * **保留已有属性如 class、id 等，可新增属性。**
