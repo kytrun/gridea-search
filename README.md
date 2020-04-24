@@ -65,12 +65,6 @@
 
 ### 2. 搜索输入框
 
-```html
-  <form id="gridea-search-form" data-update="<%= site.utils.now %>" action="<%= themeConfig.domain %>/search/">
-    <input name="q" />
-  </form>
-```
-
 * **保留已有属性如 class、id 等，可新增属性。**
 
 ### 3. 关键词高亮
@@ -78,7 +72,7 @@
 ```html
 <style>
    .searched-keyword {
-     /*Your own CSS for <span> tag here*/
+     /* <span> 标签支持的所有 CSS 属性 */
     }
 </style>
 ```
