@@ -57,15 +57,18 @@
 ### 1. 显示搜索中和无搜索结果
 
 ```html
-<p class="searching">搜索中......</p>
-<p class="no-result" style="display:none">未搜索到相关文章</p>
+<div id="gridea-search-result">
+    <p class="searching">搜索中......</p>
+    <p class="no-result" style="display:none">未搜索到相关文章</p>
+</div>
 ```
 
+* **保留已有属性如 class、id 等，可新增属性。**
 * **不强制使用 `<p>` 标签，可以用 `<div>` 等添加动画或图片。**
 
 ### 2. 搜索输入框
 
-* **保留已有属性如 class、id 等，可新增属性。**
+* **保留已有属性，可新增属性。**
 
 ### 3. 关键词高亮
 
