@@ -33,9 +33,9 @@
 公共模板，在适当位置添加搜索框供其他页面引用：
 
 ```html
-  <form id="gridea-search-form" data-update="<%= site.utils.now %>" action="<%= themeConfig.domain %>/search/">
+<form id="gridea-search-form" data-update="<%= site.utils.now %>" action="<%= themeConfig.domain %>/search/">
     <input name="q" />
-  </form>
+</form>
 ```
 
 现有部分不可修改，可以添加 class 或 style 等其他属性。
