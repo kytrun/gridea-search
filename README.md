@@ -58,8 +58,8 @@
 
 ```html
 <div id="gridea-search-result">
-    <p class="searching">搜索中......</p>
-    <p class="no-result" style="display:none">未搜索到相关文章</p>
+    <div class="searching">搜索中......</div>
+    <div class="no-result" style="display:none">未搜索到相关文章</div>
 </div>
 ```
 
