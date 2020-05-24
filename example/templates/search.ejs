@@ -3,9 +3,9 @@
 
 <head>
     <%- include('./includes/head', { siteTitle: themeConfig.siteName }) %>
-    <script src="//cdn.jsdelivr.net/gh/tangkaichuan/gridea-search/lib/fuse.js"></script>
-    <script src="//cdn.jsdelivr.net/gh/tangkaichuan/gridea-search/lib/ejs.min.js"></script>
-    <script src="//cdn.jsdelivr.net/gh/tangkaichuan/gridea-search/lib/gridea-search.min.js"></script>
+    <script src="<%= themeConfig.domain %>/media/gridea-search/fuse.basic.min.js"></script>
+    <script src="<%= themeConfig.domain %>/media/gridea-search/ejs.min.js"></script>
+    <script src="<%= themeConfig.domain %>/media/gridea-search/gridea-search.js"></script>
     <script src="<%= themeConfig.domain %>/media/gridea-search/result-template.ejs" type="text/ejs"></script>
 </head>
 
@@ -17,7 +17,7 @@
     </style>
     <div class="main animated">
         <%- include('./includes/header') %>
-        <div id="gridea-search-result">
+        <div id="gridea-search-result" data-update="<%= site.utils.now %>">
             <div class="searching">搜索中......</div>
             <div class="no-result" style="display:none">未搜索到相关文章</div>
         </div>

@@ -70,7 +70,7 @@
         caches.contents = JSON.parse(localStorage.getItem('ContentsCache'));
         if (caches.infos && caches.contents) {
             var cachedTime = caches.infos.utils.now.toString();
-            var updateTime = document.getElementById('gridea-search-form').getAttribute('data-update');
+            var updateTime = document.getElementById('gridea-search-result').getAttribute('data-update');
             if (cachedTime === updateTime) {
                 return caches;
             }
