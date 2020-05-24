@@ -21,6 +21,9 @@
  │   └── media
  │       └── gridea-search
  │           └── result-template.ejs - 搜索结果列表模板
+ │           └── ejs.min.js - 模板渲染引擎
+ │           └── fuse.basic.min.js - 模糊搜索
+ │           └── gridea-search.js - 功能入口
  └── templates
      ├── api-content.ejs - 输出文章内容的 api
      ├── api-info.ejs - 输出整站配置信息的 api，不含文章内容
@@ -33,14 +36,12 @@
 公共模板，在适当位置添加搜索框供其他页面引用：
 
 ```html
-<form id="gridea-search-form" data-update="<%= site.utils.now %>" action="<%= themeConfig.domain %>/search/">
+<form id="gridea-search-form" action="<%= themeConfig.domain %>/search/">
     <input name="q" />
 </form>
 ```
 
 现有部分不可修改，可以添加 class 或 style 等其他属性。
-
-* **搜索页面模板：search.ejs 中必须包含搜索表单 `"gridea-search-form"`。如果 search.ejs 包含了公共模板如 header.ejs，则无需额外添加。**
 
 #### (2) ./templates/search.ejs
 
@@ -57,7 +58,7 @@
 ### 1. 显示搜索中和无搜索结果
 
 ```html
-<div id="gridea-search-result">
+<div id="gridea-search-result" data-update="<%= site.utils.now %>">
     <div class="searching">搜索中......</div>
     <div class="no-result" style="display:none">未搜索到相关文章</div>
 </div>
