@@ -52,7 +52,7 @@
     function fuzzySearch(data, phrase) {
         var options = {
             includeMatches: true,
-            distance: 10000,
+            ignoreLocation: true,
             keys: [
                 'title',
                 'content'
