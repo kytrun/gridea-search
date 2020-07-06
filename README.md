@@ -1,4 +1,6 @@
 # [Gridea](https://github.com/getgridea) 静态站点客户端-文章搜索主题插件
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftangkaichuan%2Fgridea-search.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftangkaichuan%2Fgridea-search?ref=badge_shield)
+
 
 **预览：<https://tangkaichuan.cn>，或者下载此项目将 `/example` 目录置于 Gridea 的 themes 路径，自行运行 Gridea.**
 
@@ -95,3 +97,7 @@
 * 相关文章：
  
   * [给 Gridea 博客增加搜索功能](https://tangkaichuan.cn/search-for-gridea-blog/)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftangkaichuan%2Fgridea-search.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftangkaichuan%2Fgridea-search?ref=badge_large)
