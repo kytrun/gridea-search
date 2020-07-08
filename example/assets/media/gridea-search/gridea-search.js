@@ -88,7 +88,7 @@
         }
         else {
             ajax({
-                url: '../api-content/index.html',
+                url: '../api-content/index.html' + "?_=" + Date.now(),
                 success: function (data) {
                     callback(JSON.parse(data));
                     localStorage.setItem('ContentsCache', data);
@@ -105,7 +105,7 @@
         }
         else {
             ajax({
-                url: '../api-info/index.html',
+                url: '../api-info/index.html' + "?_=" + Date.now(),
                 success: function (data) {
                     callback(JSON.parse(data));
                     localStorage.setItem('InfosCache', data);
