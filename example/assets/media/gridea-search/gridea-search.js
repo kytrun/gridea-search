@@ -1,9 +1,28 @@
+/* eslint-disable no-caller */
 /**
  * https://github.com/tangkaichuan/gridea-search
  */
 
 (function() {
-  window.onload = function() {
+  document.ready = function(callback) {
+    if (document.addEventListener) {
+      document.addEventListener('DOMContentLoaded', function() {
+        document.removeEventListener('DOMContentLoaded', arguments.callee, false)
+        callback()
+      }, false)
+    } else if (document.attachEvent) {
+      document.attachEvent('onreadystatechange', function() {
+        if (document.readyState === 'complete') {
+          document.detachEvent('onreadystatechange', arguments.callee)
+          callback()
+        }
+      })
+    } else if (document.lastChild === document.body) {
+      callback()
+    }
+  }
+
+  document.ready(function() {
     var CACHES = checkCache()
     var NOW = Date.now()
     var API_CONTENT = '../api-content/index.html' + '?_=' + NOW
@@ -240,5 +259,5 @@
       }
       searchByPhrase(resultHandler)
     }
-  }
+  })
 })()
