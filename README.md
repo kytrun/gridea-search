@@ -45,7 +45,9 @@
 
 #### (2) ./templates/search.ejs
 
-搜索页面，可基于其他页面修改。
+搜索页面，可基于其他页面修改，然后添加搜索结果渲染节点及依赖脚本。
+
+* **依赖的脚本 `<script>` 必须置于 `</body>` 之前，切勿随意改变顺序，防止加载出错。**
 
 #### (3) ./assets/media/gridea-search/result-template.ejs
 
