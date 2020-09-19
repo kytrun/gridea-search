@@ -4,11 +4,10 @@
 
 (function() {
   var CACHES = checkCache()
-  var NOW = Date.now()
-  var API_CONTENT = '../api-content/index.html' + '?_=' + NOW
-  var API_INFO = '../api-info/index.html' + '?_=' + NOW
-
   if (!CACHES) {
+    var NOW = Date.now()
+    var API_CONTENT = '../api-content/index.html' + '?_=' + NOW
+    var API_INFO = '../api-info/index.html' + '?_=' + NOW
     preload(API_CONTENT)
     preload(API_INFO)
   }
