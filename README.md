@@ -84,7 +84,7 @@
 
 ## 其他：
 
-* [使用 gridea-search 的主题](https://github.com/tangkaichuan/gridea-search/issues/10)
+* [使用 gridea-search 的主题](https://github.com/tangkaichuan/gridea-search/discussions/10)
 
 * [官方目录结构与页面变量说明](https://github.com/getgridea/site/blob/master/docs/theme-structure.md)
 
