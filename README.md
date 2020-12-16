@@ -4,13 +4,15 @@
 
 ## 特点:
 
-* ### 本地缓存索引，加快搜索速度
+* ### 独立搜索结果页面和网页链接
 
-* ### 独立搜索结果页面，可高度复用已有模板
+* ### 主题开发者可高度复用已有模板
 
 * ### 延用官方 API，无附加学习成本
 
-* ### 样式自定义
+* ### 支持样式自定义
+
+* ### 良好的兼容性
 
 ## 快速开始：
 
@@ -25,13 +27,16 @@
  │           └── fuse.basic.min.js - 模糊搜索
  │           └── gridea-search.js - 功能入口
  └── templates
-     ├── api-content.ejs - 输出文章内容的 api
-     ├── api-info.ejs - 输出整站配置信息的 api，不含文章内容
+     ├── api.ejs - 输出整站 API
      └── search.ejs - 搜索页面
 ```
 ### 2. 修改以下文件
 
-#### (1) ./templates/includes/header.ejs
+#### (1) ./templates/api.ejs
+
+输出 JSON 格式 API 的模板，为了尽量缩短网络传输时间，初始注释了部分属性，可根据需要取消相应注释
+
+#### (2) ./templates/includes/header.ejs
 
 公共模板，在适当位置添加搜索框供其他页面引用：
 
@@ -43,13 +48,13 @@
 
 现有部分不可修改，可以添加 class 或 style 等其他属性。
 
-#### (2) ./templates/search.ejs
+#### (3) ./templates/search.ejs
 
 搜索页面，可基于其他页面修改，然后添加搜索结果渲染节点及依赖脚本。
 
 * **依赖的脚本 `<script>` 必须置于 `</body>` 之前，切勿随意改变顺序，防止加载出错。**
 
-#### (3) ./assets/media/gridea-search/result-template.ejs
+#### (4) ./assets/media/gridea-search/result-template.ejs
 
 搜索结果列表模板，在浏览器端解析，基本复用 ./templates/includes/post-list.ejs，但修改了摘要内容 `<%- post.abstract %>` 为 `<%- post.searchedPreview %>`，用于含关键词的搜索结果预览。
 

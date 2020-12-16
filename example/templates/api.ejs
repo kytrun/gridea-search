@@ -1,0 +1,41 @@
+<%- output() %><%  -%>
+<%
+function refine(str){
+   return str.replace(/(<(\/?)(\w+)[^>]*>)|(<!--[\s\S]*?-->)/g ,'') // 去除 html 标签如 <p></p> 和注释
+   .replace(/\s+/g,' ') // 压缩空格换行等只保留一个空格
+}
+
+function output(){
+   // 全站 API，根据主题需要取消注释使用相应接口
+   let api = {
+      // customConfig: site.customConfig,
+      tags: site.tags,
+      menus: site.menus,
+      themeConfig: site.themeConfig,
+      posts: [] // 必选，不可更改
+   }
+site.posts.forEach(post => {
+   if(!post.hideInList){ // 排除隐藏文章
+     // 文章信息
+      let postInfo={
+         // toc: post.toc,
+         // isTop: post.isTop,
+         // fileName: post.fileName,
+         // abstract: post.abstract,
+         // description: refineInfo(post.description),
+         content: refine(post.content),
+         tags: post.tags,
+         title: post.title,
+         feature: post.feature,
+         link: post.link,
+         stats: post.stats,
+         date: post.date,
+         dateFormat: post.dateFormat
+      }
+      api.posts.push(postInfo)
+   }
+})
+
+return JSON.stringify(api)
+}
+%>
