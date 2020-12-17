@@ -1,6 +1,6 @@
 # [Gridea](https://github.com/getgridea) 静态站点客户端-文章搜索主题插件
 
-**预览：<https://tangkaichuan.cn>，或者下载此项目将 `/example` 目录置于 Gridea 的 themes 路径，自行运行 Gridea.**
+**预览：<https://tangkaichuan.cn>，或者下载此项目将 `example/` 目录置于 Gridea 的 themes 路径，自行运行 Gridea.**
 
 ## 特点:
 
