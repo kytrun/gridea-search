@@ -7,7 +7,7 @@ function refine(str){
 
 function output(){
    // 全站 API，根据主题需要取消注释使用相应接口
-   let api = {
+   const api = {
       // customConfig: site.customConfig,
       // tags: site.tags,
       // menus: site.menus,
@@ -17,7 +17,7 @@ function output(){
 site.posts.forEach(post => {
    if(!post.hideInList){ // 排除隐藏文章
      // 文章信息
-      let postInfo={
+      const postInfo={
          // toc: post.toc,
          // isTop: post.isTop,
          // fileName: post.fileName,
