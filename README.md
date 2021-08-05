@@ -1,6 +1,6 @@
 # [Gridea](https://github.com/getgridea) 静态站点客户端-文章搜索主题插件
 
-**预览：<https://tangkaichuan.cn>，或者下载此项目将 `example/` 目录置于 Gridea 的 themes 路径，自行运行 Gridea.**
+**预览：<https://kytrun.com>，或者下载此项目将 `example/` 目录置于 Gridea 的 themes 路径，自行运行 Gridea.**
 
 ## 特点:
 
@@ -89,7 +89,7 @@
 
 ## 其他：
 
-* [使用 gridea-search 的主题](https://github.com/tangkaichuan/gridea-search/discussions/10)
+* [使用 gridea-search 的主题](https://github.com/kytrun/gridea-search/discussions/10)
 
 * [官方目录结构与页面变量说明](https://github.com/getgridea/site/blob/master/docs/theme-structure.md)
 
@@ -99,8 +99,8 @@
 
   * 模板解析 - EJS: <https://github.com/mde/ejs>
 
-* 开源协议：[MIT](https://github.com/tangkaichuan/gridea-search/blob/master/LICENSE)
+* 开源协议：[MIT](https://github.com/kytrun/gridea-search/blob/master/LICENSE)
 
 * 相关文章：
  
-  * [给 Gridea 博客增加搜索功能](https://tangkaichuan.cn/search-for-gridea-blog/)
+  * [给 Gridea 博客增加搜索功能](https://kytrun.com/search-for-gridea-blog/)
