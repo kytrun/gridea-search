@@ -1,5 +1,5 @@
 /**
- * https://github.com/tangkaichuan/gridea-search
+ * https://github.com/kytrun/gridea-search
  */
 
 (function() {
