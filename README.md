@@ -1,18 +1,17 @@
 # [Gridea](https://github.com/getgridea) 静态站点客户端-文章搜索主题插件
 
-**预览：<https://kytrun.com>，或者下载此项目将 `example/` 目录置于 Gridea 的 themes 路径，自行运行 Gridea.**
+**预览：<https://kytrun.com>，或者下载此项目将 `example/` 目录置于 Gridea 的 themes 路径，自行运行 Gridea。**
+
+**⚠ 此插件仅适合有前端编程基础的 Gridea 主题开发者使用，可以在此查看[使用 gridea-search 的主题](https://github.com/kytrun/gridea-search/discussions/10)**。
 
 ## 特点:
 
-* ### 独立搜索结果页面和网页链接
-
-* ### 主题开发者可高度复用已有模板
-
-* ### 延用官方 API，无附加学习成本
-
-* ### 支持样式自定义
-
-* ### 良好的兼容性
+*  独立搜索结果页面和网页链接
+*  主题开发者可高度复用已有模板
+*  延用官方 API，无附加学习成本
+*  仅使用搜索时加载所需资源
+*  支持样式自定义
+*  良好的兼容性
 
 ## 快速开始：
 
@@ -34,7 +33,7 @@
 
 #### (1) ./templates/api.ejs
 
-输出 JSON 格式 API 的模板，为了尽量缩短网络传输时间，初始注释了部分属性，可根据需要取消相应注释
+输出 JSON 格式 API 的模板，为了尽量缩短网络传输时间，初始注释了部分属性，可根据需要取消相应注释。
 
 #### (2) ./templates/includes/header.ejs
 
