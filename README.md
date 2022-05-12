@@ -2,7 +2,7 @@
 
 **预览：<https://kytrun.com>，或者下载此项目将 `example/` 目录置于 Gridea 的 themes 路径，自行运行 Gridea。**
 
-**⚠ 此插件仅适合有前端编程基础的 Gridea 主题开发者使用，可以在此查看[使用 gridea-search 的主题](https://github.com/kytrun/gridea-search/discussions/10)**。
+**⚠ 仅适合有前端编程基础的 Gridea 主题开发者使用；可在此查看[使用 gridea-search 的主题](https://github.com/kytrun/gridea-search/discussions/10)**。
 
 ## 特点:
 
